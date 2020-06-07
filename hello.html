@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<style>
+
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+
+</style>
+
+</head>
+<body>
+    <label for="start">Start date:</label>
+    <form action="/submit-t0" method="post">
+        <input type="date" id="start" name="t0"
+               value="2018-07-22"
+               min="2018-01-01" max="2018-12-31">
+        <button type="submit" >sumbit t0</button>
+    </form>
+    <form action="/submit-t1" method="post">
+        <input type="date" id="start" name="t1"
+               value="2018-07-22"
+               min="2018-01-01" max="2018-12-31">
+        <button type="submit"> sumbit t1 </button>
+    </form>
+</body>
+</html>
